@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFusion 🔗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <select class="language">
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="javascript">Javascript</option>
+        <option value="csharp.net">C#</option>
+        <option value="cpp">C++</option>
+    </select>
+
+    <button id="btn">Run</button>
+    <br>
+
+    <p><input type="checkbox" id="versionCheckbox"> Show version</p>
+    <p id="versionShower"></p>
+    <textarea id="code" placeholder="Write code something..."></textarea>
+    <br>
+<div class="container">
+  
+    <div id="output">
+
+    </div>
+    
+    <div class="openAI">
+        <div id="chat"></div>
+        <textarea type="text" id="AIchat" placeholder="Ask anything..." onchange="change()"></textarea>
+        
+        <button id="AIbtn" onclick="generateContent()">GenTalk </button>
+    </div>
+    
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
